@@ -74,6 +74,7 @@ or
 
 	[fb_pe url="https://www.facebook.com/FacebookDevelopers/posts/10152128760693553"]
 	[fb_pe url="https://www.facebook.com/FacebookDevelopers/posts/10152128760693553" bottom="50"]
+Find other Example in plugins support page.
 
 == Frequently Asked Questions ==
 
