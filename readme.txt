@@ -81,6 +81,10 @@ Find other Example in plugins support page.
 
 == Frequently Asked Questions ==
 
+= Can I use this plugin with any theme?  =
+
+Yes, This Plugin does not interfere with the normal operation of the themes.
+
 == Screenshots ==
 
 1. Button in the text editor.
