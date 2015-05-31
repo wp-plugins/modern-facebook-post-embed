@@ -65,7 +65,7 @@ Graphics
 
 or
 
-1. Upload `wp-login-logo.zip` with your board plugins installer
+1. Upload `modern-facebook-post-embed.zip` with your board plugins installer
 
 ### Shortcode
 
