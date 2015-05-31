@@ -6,7 +6,7 @@ Plugin URL: http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/
 Tags: facebook, facebook embed, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,13 +21,16 @@ The appearance is structured on the latest version of widget published by facebo
 A few notes about the sections above:
 
 *   "Contributors" @Cris9400, @Disy
-*   "Tags" facebook, facebook embed, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
+*   "Tags" facebook, facebook embed, facebook page, facebook feed, facebook video, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 *   "Requires at least" 4.0 or later
 *   "Tested up to" 4.2.2
-*   "Stable Version" 1.0.0
+*   "Stable Version" 1.0.1
 
 = Language =
 * English
+
+= Live Demo =
+[http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/](http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/)
 
 = Cris9400 =
 Developer
@@ -78,6 +81,10 @@ Find other Example in plugins support page.
 
 == Frequently Asked Questions ==
 
+= Can I use this plugin with any theme?  =
+
+Yes, This Plugin does not interfere with the normal operation of the themes.
+
 == Screenshots ==
 
 1. Button in the text editor.
@@ -88,8 +95,23 @@ Find other Example in plugins support page.
 
 4. Shortcode with Post Link.
 
+5. Page Shortcode embed
+
+6. Facebook Page Feed
+
+7. Facebook video embed
+
 == Changelog ==
 
 = 1.0.0 =
 
 * First Release.
+
+= 1.0.1 =
+
+* Add Facebook Page plugin
+* Add Facebook Page Shortcode
+* Add Page Feed on Page Shortcode
+* Add Facebook Video Embed
+* Add Facebook Video Shortcode
+* Add Admin Page

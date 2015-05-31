@@ -5,7 +5,7 @@
             title: 'Modern Facebook Post Embed',
             icon: 'facebook-post-embed-icon',
             onclick: function() {
-                editor.insertContent('[mfb_pe url="" bottom="50"]');
+                editor.insertContent('[mfb_pe url="" mbottom="50"]');
             }
         });
     });
