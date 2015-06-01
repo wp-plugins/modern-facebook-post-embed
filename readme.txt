@@ -10,7 +10,7 @@ Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-One modern shortcode to embedding all facebook posts easily, responsive and custom margin bottom.
+One modern shortcode to embedding all facebook posts, all page plugin, page feed and facebook video easily, responsive, custom margin bottom and other featured.
 
 == Description ==
 View the plugin page for more information and discussion: [http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/](http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/)
