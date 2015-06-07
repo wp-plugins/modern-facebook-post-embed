@@ -2,18 +2,18 @@
 Author: Cris9400
 Contributors: Cris9400
 Author URI: http://cris9400.nerdnet.it/
-Plugin URL: http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/
+Plugin URL: http://workstation.nerdnet.it/portfolio/facebook-post-embed/
 Tags: facebook, facebook embed, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 One modern shortcode to embedding all facebook posts, all page plugin, page feed and facebook video easily, responsive, custom margin bottom and other featured.
 
 == Description ==
-View the plugin page for more information and discussion: [http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/](http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/)
+View the plugin page for more information and discussion: [http://workstation.nerdnet.it/portfolio/facebook-post-embed/](http://workstation.nerdnet.it/portfolio/facebook-post-embed/)
 
 Modern Facebook Post Embed It allows you to quickly and easily import a facebook post from platform to our portal wordpress. This innovative design and rapid connection with facebook improve the performance of your platform, reducing waiting times.
 The appearance is structured on the latest version of widget published by facebook.
@@ -24,20 +24,20 @@ A few notes about the sections above:
 *   "Tags" facebook, facebook embed, facebook page, facebook feed, facebook video, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 *   "Requires at least" 4.0 or later
 *   "Tested up to" 4.2.2
-*   "Stable Version" 1.0.1
+*   "Stable Version" 1.0.2
 
 = Language =
 * English
 
 = Live Demo =
-[http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/](http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/)
+[http://workstation.nerdnet.it/portfolio/facebook-post-embed/](http://workstation.nerdnet.it/portfolio/facebook-post-embed/)
 
 = Cris9400 =
 Developer
 
 * Facebook [Cris9400](https://www.facebook.com/cristian.tattini)
 * MyWEBSite [Cris9400 Portfolio](http://cris9400.nerdnet.it)
-* [Work Station](http://cris9400.nerdnet.it/work/)
+* [Work Station](http://workstation.nerdnet.it/)
 
 = Disy =
 Graphics
@@ -51,7 +51,7 @@ Graphics
 * Twitter @[nerdnet_it](https://twitter.com/nerdnet.it)
 * Facebook [NerdNET](https://www.facebook.com/NerdNet.it)
 
-* [Work Station](http://cris9400.nerdnet.it/work/)
+* [Work Station](http://workstation.nerdnet.it/)
 
 == Installation ==
 
@@ -103,9 +103,9 @@ Yes, This Plugin does not interfere with the normal operation of the themes.
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.2 =
 
-* First Release.
+* Change Workstation Directory
 
 = 1.0.1 =
 
@@ -115,3 +115,7 @@ Yes, This Plugin does not interfere with the normal operation of the themes.
 * Add Facebook Video Embed
 * Add Facebook Video Shortcode
 * Add Admin Page
+
+= 1.0.0 =
+
+* First Release.

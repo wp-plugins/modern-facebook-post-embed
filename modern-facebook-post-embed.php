@@ -2,18 +2,18 @@
 /**
  * Modern Facebook Post Embed
  *
- * @link http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/
+ * @link http://workstation.nerdnet.it/portfolio/facebook-post-embed/
  *
  * @author Cris9400
- * @version 1.0.1
+ * @version 1.0.2
  * @package Modern_facebook_post_embed
  */
 
 /*
 * Plugin Name: Modern Facebook Post Embed
-* Plugin URI: http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/
+* Plugin URI: http://workstation.nerdnet.it/portfolio/facebook-post-embed/
 * Description: One shortcode to embedding modern facebook posts easily, responsive and custom margin bottom.
-* Version: 1.0.1
+* Version: 1.0.2
 * Author: Cris9400
 * Author URI: http://cris9400.nerdnet.it/
 * Text Domain: modern-facebook-post-embed
@@ -44,11 +44,11 @@ class MFacebookPostEmbed
 	 /**
      * @const WPURL Link to author site
      */
-    const WPURL = 'http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/';
+    const WPURL = 'http://workstation.nerdnet.it/portfolio/facebook-post-embed/';
     /**
      * @const VERSION The current plugin version
      */
-    const VERSION = '1.0.1';
+    const VERSION = '1.0.2';
 
     /**
      * Holds the values to be used in the fields callbacks
@@ -158,7 +158,7 @@ document.getElementById("copylabel").style.display = 'none';
 		
 		<div id="homepage" style="display: block">
 			<div class="row">
-				<iframe src="http://cris9400.nerdnet.it/work/portfolio/facebook-post-embed/" width="100%" height="750"></iframe>
+				<iframe src="http://workstation.nerdnet.it/portfolio/facebook-post-embed/" width="100%" height="750"></iframe>
 			</div>
 		</div>
 		
