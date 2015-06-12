@@ -6,7 +6,7 @@ Plugin URL: http://workstation.nerdnet.it/portfolio/facebook-post-embed/
 Tags: facebook, facebook embed, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ A few notes about the sections above:
 *   "Tags" facebook, facebook embed, facebook page, facebook feed, facebook video, facebook post, responsive, embed, embedding, custom, customizer, customize, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 *   "Requires at least" 4.0 or later
 *   "Tested up to" 4.2.2
-*   "Stable Version" 1.0.2
+*   "Stable Version" 1.0.3
 
 = Language =
 * English
@@ -76,7 +76,7 @@ or
 ### Example
 
 	[fb_pe url="https://www.facebook.com/FacebookDevelopers/posts/10152128760693553"]
-	[fb_pe url="https://www.facebook.com/FacebookDevelopers/posts/10152128760693553" bottom="50"]
+	[fb_pe url="https://www.facebook.com/FacebookDevelopers/posts/10152128760693553" mbottom="50"]
 Find other Example in plugins support page.
 
 == Frequently Asked Questions ==
@@ -102,6 +102,13 @@ Yes, This Plugin does not interfere with the normal operation of the themes.
 7. Facebook video embed
 
 == Changelog ==
+
+= 1.0.3 =
+
+* Add Embed Comments on posts
+* Add Comments Shortcode
+* Update Admin Page
+* Add Admin Sidebar
 
 = 1.0.2 =
 

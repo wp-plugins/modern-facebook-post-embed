@@ -5,7 +5,7 @@
  * @link http://workstation.nerdnet.it/portfolio/facebook-post-embed/
  *
  * @author Cris9400
- * @version 1.0.2
+ * @version 1.0.3
  * @package Modern_facebook_post_embed
  */
 
@@ -13,7 +13,7 @@
 * Plugin Name: Modern Facebook Post Embed
 * Plugin URI: http://workstation.nerdnet.it/portfolio/facebook-post-embed/
 * Description: One shortcode to embedding modern facebook posts easily, responsive and custom margin bottom.
-* Version: 1.0.2
+* Version: 1.0.3
 * Author: Cris9400
 * Author URI: http://cris9400.nerdnet.it/
 * Text Domain: modern-facebook-post-embed
@@ -48,7 +48,7 @@ class MFacebookPostEmbed
     /**
      * @const VERSION The current plugin version
      */
-    const VERSION = '1.0.2';
+    const VERSION = '1.0.3';
 
     /**
      * Holds the values to be used in the fields callbacks
@@ -133,7 +133,14 @@ document.getElementById("copylabel").style.display = 'none';
 
 			<!-- Latest compiled and minified JavaScript -->
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-			
+			<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3&appId=346339798798281";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 			
 			<nav class="navbar navbar-inverse">
 				<div class="container-fluid">
@@ -157,9 +164,55 @@ document.getElementById("copylabel").style.display = 'none';
 		</div>
 		
 		<div id="homepage" style="display: block">
-			<div class="row">
-				<iframe src="http://workstation.nerdnet.it/portfolio/facebook-post-embed/" width="100%" height="750"></iframe>
+		<div class="row">
+		<div class="col-lg-9">
+			<div class="col-lg-3">
+			<img src="<?php echo plugins_url('/images/fb-icon.png', __FILE__ )?>" class="img-thumbnail" />
 			</div>
+			<div class="col-lg-9">
+			<h2>Modern Facebook Post</h2>
+			<p>This plugin allows you to import any post, video, page and much more to facebook on your blog or website.
+			<br/>
+			The use of this plugin is very immediate and fast! begin now to share your facebook!</p>
+			</div>
+			<br/>
+			<div class="col-lg-12">
+			<div class="fb-comments" data-width="100%" data-href="http://workstation.nerdnet.it/portfolio/facebook-post-embed/" data-numposts="5"></div>
+			</div>
+		</div>
+			<div class="col-lg-3">	
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <center><h3 class="panel-title"><?php _e('Donate to NerdNET', 'wp-login-logo'); ?></h3></center>
+  </div>
+  <div class="panel-body">
+	<p>
+	<center><?php _e('Donate to support the community and allow the development team to continue working by supporting at least part of the costs of management and hosting.', 'wp-login-logo'); ?></center>
+	</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="S65MNVSU4D4U6">
+			<input type="image" width="100%" src="http://workstation.nerdnet.it/wp-content/uploads/2015/06/donate-button.png" border="0" name="submit" alt="PayPal - Il metodo rapido, affidabile e innovativo per pagare e farsi pagare.">
+			<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+	</form>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <center><h3 class="panel-title"><?php _e('WorkStation', 'wp-login-logo'); ?></h3></center>
+  </div>
+  <div class="panel-body">
+	<p>
+	<center><?php _e('Find more content in our development center!', 'wp-login-logo'); ?></center>
+	</p>
+	<a href="http://workstation.nerdnet.it/" target="_blank"><button type="button" width="100%" class="btn btn-info btn-lg">WorkStation</button></a>
+	<a href="http://workstation.nerdnet.it/wordpress/" target="_blank"><button type="button" width="50%" class="btn btn-primary">Plugins</button></a>
+	<a href="http://workstation.nerdnet.it/wordpress/" target="_blank"><button type="button" width="100%" class="btn btn-success">Theme</button></a>
+  </div>
+</div>
+</div>
+</div>
 		</div>
 		
 		<div id="epostpage" style="display: none">
@@ -214,6 +267,15 @@ document.getElementById("copylabel").style.display = 'none';
 		<center><h2><?php _e('EMBED VIDEO', 'modern-facebook-post-embed'); ?></h2></center>
 		<h4><?php _e('Shortcode', 'modern-facebook-post-embed'); ?></h4>
 		<div class="well">[mfb_video url="" size="" mbottom=""]</div>
+		</div>
+		</div>
+		<div class="row">
+		
+		<div class="col-lg-5">
+		<center><h2><?php _e('EMBED COMMENTS', 'modern-facebook-post-embed'); ?></h2></center>
+		<h4><?php _e('Shortcode', 'modern-facebook-post-embed'); ?></h4>
+		<div class="well">[mfb_comments url="" post-number="" width="" mtop="" mbottom=""]</div>
+		<br/>
 		</div>
 		</div>
 		</div>
@@ -604,4 +666,137 @@ function fb_video_button_icon(){
 	<?php
 }
 add_action('admin_head','fb_video_button_icon');
+?>
+
+
+<?php
+function facebook_comments_embed_style(){
+	?>
+    	<style type="text/css">
+			div.fb-comments{
+				width:100% !important;
+				max-width:100% !important;
+				min-width:100% !important;
+				display:block !important;
+			}
+
+			div.fb-comments *{
+				width:100% !important;
+				max-width:100% !important;
+				min-width:100% !important;
+				display:block !important;
+			}
+		</style>
+    <?php
+}
+add_action('wp_head', 'facebook_comments_embed_style');
+
+function facebook_comments_embed_script(){
+	?>
+		<div id="fb-root"></div>
+	
+			<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+			</script>
+    <?php
+}
+add_action('wp_footer', 'facebook_comments_embed_script');
+
+
+// Add [mfb_comments url="" post-number="" width="" mtop="" mbottom=""] shortcode
+function facebook_comments_embed_shortcode( $atts, $content = null ){
+
+	extract(
+		shortcode_atts(
+			array(
+				"url"		=>	'',
+				"postnumber"		=>	'',
+				"width" 		=>	'',
+				"mtop" 		=>	'',
+				"mbottom" 		=>	''
+			),$atts
+		)
+	);
+
+	if( empty($url) ){
+		return '<p>Please enter facebook video url.</p>';
+		return false;
+	}
+
+	if( empty($post_number) ){
+		$post_numberdata = '5';
+	}
+
+	else if (is_numeric($postnumber)){
+		$postnumberdata == $postnumber ;
+	}
+	else {
+	return '<p>Please enter valid post number.</p>';
+	return false;
+	}
+	
+	if( empty($width) or $width == '0' ){
+		$width1 = ' data-width="100%"';
+	}
+	else{
+		$width1 = ' data-width="'.$width.'"';
+	}
+	
+	if( empty($mtop) or $mtop == '0' ){
+		$stylemt = 'margin-top:0px;"';
+	}
+
+	else{
+		$stylemt = 'margin-top:'.$mtop.'px;"';
+	}
+	
+	if( empty($mbottom) or $mbottom == '0' ){
+		$stylemb = 'margin-bottom:0px;';
+	}
+
+	else{
+		$stylemb = 'margin-bottom:'.$mbottom.'px;"';
+	}
+	
+	
+	//return '<div class="fb-page fb-page-embed" data-href="'.$url.'" '.$coverdata.' '.$facedata.' '.$feeddata.'></div>'; style="
+	return '<div class="fb-comments" style="'.$stylemt.' '.$stylemb.'" data-href="'.$url.'" '.$width1.' data-numposts="'.$postnumberdata.'"></div>'; 
+	
+}
+add_shortcode("mfb_comments", "facebook_comments_embed_shortcode");
+
+function fb_comments_button($buttons) {
+	array_push($buttons, 'facebook_comments_embed');
+	return $buttons;
+}
+add_filter('mce_buttons', 'fb_comments_button');
+
+
+// Register js for facebook button
+function fb_comments_register_tinymce_js($plugin_array) {
+	$plugin_array['facebook_comments_embed'] = plugins_url( '/js/mfb_comments_button.js', __FILE__);
+	return $plugin_array;
+}
+add_filter('mce_external_plugins', 'fb_comments_register_tinymce_js');
+
+
+
+function fb_comments_button_icon(){
+	?>
+		<style type="text/css">
+			.mce-i-facebook-comments-embed-icon:before{
+				font-family: 'dashicons' !important;
+				content: '\f125' !important;
+				font-size: 24px !important;
+			}
+		</style>
+	<?php
+}
+add_action('admin_head','fb_comments_button_icon');
 ?>
